@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Day4_ex {
-   /* void main() {
+    void main() {
 
         int[][] marks = new int[5][3];
         int[][] mark = {
@@ -30,7 +30,5 @@ public class Day4_ex {
         }
     }
 
-}*\
-
-    */
+}
 

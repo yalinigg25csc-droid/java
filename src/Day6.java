@@ -1,26 +1,27 @@
 public class Day6 {
-    static class student {
+   public static void main(){
+
+
+    class Student {
         String name;
         int regno;
         String dept;
 
-        student() {
-            System.out.println("Constructor called");
+        public Student(String dyro, int i, String cs) {
         }
 
-        student(String name, int regno, String dept) {
+
+        void student(String name, int regno, String dept) {
             this.name = name;
             this.regno = regno;
             this.dept = dept;
         }
-      void printDetails(){
-            System.out.println("Name: "+name);
-            System.out.println("Regno: "+regno);
-            System.out.println("Dept: "+dept);
+      void printDetails() {
+          System.out.println("Name: " + name);
+          System.out.println("Regno: " + regno);
+          System.out.println("Dept: " + dept);
+      }
 
-        }
-        public static void main(String[]args){
-
-        }
-    }
+}
+}
 }

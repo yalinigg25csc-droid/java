@@ -1,4 +1,4 @@
-gitimport java.util.Scanner;
+
 
 
     void main(){
@@ -9,6 +9,7 @@ gitimport java.util.Scanner;
         String dept= sc.nextLine();
         System.out.println("Enter your age:");
         String age= sc.nextLine();
+
 
 
 
