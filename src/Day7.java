@@ -1,57 +1,41 @@
-public static void main() {
-     class Request {
-        String name;
-        String date;
-        String reason;
+public class Day7 {
+     static class Payment {
+        String amount;
 
-        Request(String name, String date, String reason) {
-            this.name = name;
-            this.date = date;
-            this.reason = reason;
-        }
-
-        void approve() {
-            System.out.println("Approving request");
-        }
-
-        void reject() {
-            System.out.println("Reject request");
+        void transfer() {
+            System.out.println("Made a transfer");
         }
     }
 
-    static class LeaveRequest extends Request {
-
-        LeaveRequest(String name, String date, String reason) {
-            super(name, date, reason);
-        }
-
-        void approveLeaveRequest() {
-            System.out.println("Approving leave request");
-        }
-
-        void rejectLeaveRequest() {
-            System.out.println("Reject leave request");
-        }
-    }
-    static class OnDutyRequest extends Request {
-
-        OnDutyRequest(String name, String date, String reason) {
-            super(name, date, reason);
-        }
-
-        void approveOnDutyRequest() {
-            System.out.println("Approving on duty request");
-        }
-
-        void rejectOnDutyRequest() {
-            System.out.println("Reject on duty request");
+    static class UPIPayment extends Payment {
+        @Override
+        void transfer() {
+            System.out.println("TRANSFER IS MADE");
         }
     }
 
 
-        LeaveRequest leaveRequest = new LeaveRequest("yalini", "12-06-2026", "health issues");
-        leaveRequest.rejectLeaveRequest();
-        OnDutyRequest onDutyRequest = new OnDutyRequest("yalini", "17-06-2026", "NCC camp");
-        onDutyRequest.approveOnDutyRequest();
+    static class CardPayment extends Payment {
+        @Override
+        void transfer() {
+            System.out.println("TRANSFER IS MADE");
+        }
+    }
 
+    static class NBPayment extends Payment {
+        @Override
+        void transfer() {
+            System.out.println("TRANSFER IS MADE");
+        }
+    }
+    public static void main(String[] args) {
+        UPIPayment upi = new UPIPayment();
+        upi.transfer();
+
+        CardPayment card = new CardPayment();
+        card.transfer();
+
+        NBPayment nb = new NBPayment();
+        nb.transfer();
+    }
 }
