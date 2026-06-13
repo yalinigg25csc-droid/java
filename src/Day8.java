@@ -1,6 +1,6 @@
  public  class Day8 {
 
-   /* interface Employee {
+   interface Employee {
         String Name();
         String id();
         String Salary();
@@ -71,7 +71,7 @@
         checking.work();
     }
 }
-*/
+
 
      record Coursevetrecord(String course_name, String dept) {
 
