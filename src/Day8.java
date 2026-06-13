@@ -1,6 +1,6 @@
-public  class Day8 {
+ public  class Day8 {
 
-    interface Employee {
+   /* interface Employee {
         String Name();
         String id();
         String Salary();
@@ -71,5 +71,17 @@ public  class Day8 {
         checking.work();
     }
 }
+*/
+
+     record Coursevetrecord(String course_name, String dept) {
+
+     }
+
+     static void main() {
+         Coursevetrecord coursevet = new Coursevetrecord("PYTHON","CS");
+         System.out.println(coursevet.course_name);
+         System.out.println(coursevet.dept);
+     }
+ }
 
 
