@@ -1,6 +1,6 @@
 public class day3 {
     void main() {
-       int n = 5;
+        int n = 5;
         for (int row = 1; row <= n; row++) {
             for (int column = 1; column <= row; column++) {
                 System.out.print(row);
@@ -9,7 +9,8 @@ public class day3 {
             System.out.println();
 
         }
- }
+    }
+}
 
 
 
