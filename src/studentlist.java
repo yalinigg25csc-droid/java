@@ -22,7 +22,7 @@ public class studentlist {
 
         static void updateStudent(LinkedList<Student> students) {
             for (Student s : students) {
-                if (s.name.equals("Deepa")) {
+                if (s.name.equals("104")) {
                     s.marks = 95; // Update marks from 85 to 95
                 }
             }
@@ -33,11 +33,11 @@ public class studentlist {
             LinkedList<Student> students = new LinkedList<>();
 
             // Add 5 Students
-            students.add(new Student("Arun", 101, 80));
-            students.add(new Student("Bala", 102, 75));
-            students.add(new Student("Charan", 103, 90));
-            students.add(new Student("Deepa", 104, 85));
-            students.add(new Student("Esha", 105, 88));
+            students.add(new Student("anu",    01, 80));
+            students.add(new Student("abi",    02, 75));
+            students.add(new Student("lisa",   03, 90));
+            students.add(new Student("vaani",  04, 85));
+            students.add(new Student("maya",   05, 88));
 
             // Remove 1 Student
             removeStudent(students);
@@ -49,8 +49,8 @@ public class studentlist {
             System.out.println("\nStudent Details");
             for (Student s : students) {
                 System.out.println(
-                        s.name + " " +
-                                s.regNo + " " +
+                                s.name     + " " +
+                                s.regNo    + " " +
                                 s.marks
                 );
             }
