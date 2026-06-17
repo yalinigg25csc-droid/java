@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Day10 {
     static void main() {
@@ -10,7 +11,7 @@ public class Day10 {
         list.add("sita");
         list.add("radha");
         for (String s : list) {
-            System.out.println( s);
+            System.out.println(s);
         }
         list.remove("ram");
         for (String s : list) {
@@ -18,3 +19,6 @@ public class Day10 {
         }
     }
 }
+
+
+
