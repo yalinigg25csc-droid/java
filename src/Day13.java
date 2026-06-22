@@ -45,6 +45,7 @@ public class Day13 {
                 System.out.println();
             }
         } catch (IOException io) {
+
             io.printStackTrace();
         }
     }
